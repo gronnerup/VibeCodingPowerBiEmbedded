@@ -93,26 +93,6 @@ The Copilot instructions will guide the AI to:
 - Avoid common pitfalls
 - Create production-ready code
 
-## 📁 Project Structure (After Generation)
-
-```
-VibeCodingPowerBiEmbedded/
-├── .github/
-│   └── copilot-instructions.md   # AI coding guidelines
-├── server.js                      # Express server
-├── database.js                    # sql.js database manager
-├── auth-service.js                # JWT authentication
-├── powerbi-service.js             # Power BI embedding logic
-├── package.json
-├── .env                          # Environment variables (YOU CREATE)
-└── public/                       # Static frontend
-    ├── index.html                # Single page app
-    ├── app.js                    # Frontend logic
-    ├── app-extended.js           # Advanced features
-    ├── styles.css                # Styling
-    └── [libraries]               # Local JS dependencies
-```
-
 ## 🔐 Azure AD App Registration Setup
 
 ### Create Service Principal for Power BI
@@ -154,19 +134,6 @@ This boilerplate is designed for iterative AI-assisted development:
 6. **Phase 6**: Azure deployment
 
 Each phase is documented in the Copilot instructions. Just ask Copilot to implement the next phase!
-
-## ☁️ Deployment to Azure
-
-The boilerplate includes **tested, battle-proven** Azure deployment steps in the Copilot instructions:
-
-```powershell
-# Ask Copilot: "Deploy this to Azure App Service"
-# It will guide you through:
-# - Creating Azure resources
-# - Configuring environment variables
-# - Building and deploying the app
-# - Avoiding common pitfalls
-```
 
 **Critical Success Factors** (handled by instructions):
 - ✅ Uses sql.js (NOT better-sqlite3 - which fails on Azure)
